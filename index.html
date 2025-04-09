@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader__spinner"></div>
+    </div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switch-wrapper">
+        <button id="themeToggleBtn" class="theme-toggle-btn">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Sujoy Kumar Saha</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Floating Elements -->
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+        <div class="floating-element float-3"></div>
+        <div class="floating-element float-4"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Sujoy Kumar Saha</span></h1>
+                <h2>Programmer & Photographer</h2>
+                <p></p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Sujoy2006" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sujoy-saha-7a33a7348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/su_joy26?igsh=MWVoYjN0MmhsaHY3bA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image-wrapper">
+                        <img src="Image/Sujoy.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="personal-summary">
+                        <h3>Sujoy Kumar Saha</h3>
+                        <p class="tagline">Programmer & Photographer</p>
+                        <div class="about-social-links">
+                            <a href="https://github.com/Sujoy2006" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sujoy-saha-7a33a7348" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/su_joy26" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="bio-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="profile">Profile</button>
+                            <button class="tab-btn" data-tab="education">Education</button>
+                            <button class="tab-btn" data-tab="interests">Interests</button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="profile">
+                                <p>I'm a , with a creative eye for photography. I love solving complex problems with clean, efficient code and creating beautiful visual experiences.</p>
+                                
+                                <div class="personal-info">
+                                    <div class="info-column">
+                                        <div class="info-item">
+                                            <span class="info-title"><i class="fas fa-user"></i> Name:</span>
+                                            <span class="info-value">Sujoy Kumar Saha</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-title"><i class="fas fa-envelope"></i> Email:</span>
+                                            <span class="info-value">sujoykumarsaha2004@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-column">
+                                        <div class="info-item">
+                                            <span class="info-title"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                                            <span class="info-value">Siliguri, India</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-title"><i class="fas fa-briefcase"></i> Status:</span>
+                                            <span class="info-value highlight">Available for Internship</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="cta-container">
+                                    <a href="#" class="btn btn-primary" download><i class="fas fa-download"></i> Download CV</a>
+                                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="education">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h4>Bachelor of Computer Applications</h4>
+                                            <p class="timeline-date">2024 - Present</p>
+                                            <p>Centre For Innovative Studies, NBU</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h4>Higher Secondary Education</h4>
+                                            <p class="timeline-date">2017 - 2024</p>
+                                            <p>Siliguri Baradakanta Vidyapith (H.S.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="interests">
+                                <div class="interests-grid">
+                                    <div class="interest-item">
+                                        <div class="interest-icon"><i class="fas fa-camera"></i></div>
+                                        <h4>Photography</h4>
+                                        <p>Capturing moments and creating visual stories through my phone.</p>
+                                    </div>
+                                    <div class="interest-item">
+                                        <div class="interest-icon"><i class="fas fa-code"></i></div>
+                                        <h4>Coding</h4>
+                                        <p>Building applications and exploring new technologies.</p>
+                                    </div>
+                                    <div class="interest-item">
+                                        <div class="interest-icon"><i class="fas fa-brain"></i></div>
+                                        <h4>AI & ML</h4>
+                                        <p>Exploring the fascinating world of artificial intelligence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="Image/Project1.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student performance and behaviour prediction system</h3>
+                        <p>A web application for predicting student performance and behaviour based on their academic data and behaviour.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Science</span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sujoy2006/Student-performance-and-behaviour-prediction" class="btn btn-small btn-secondary" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                
+            </div>
+            <div class="projects-cta">
+                <a href="#" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-intro">
+                <p>My technical toolkit combines programming expertise with creative problem-solving abilities</p>
+            </div>
+            
+            <div class="skills-masonry">
+                <!-- Programming Skills Group -->
+                <div class="skills-group">
+                    <div class="skills-group-header">
+                        <span class="skill-group-icon"><i class="fas fa-code"></i></span>
+                        <h3>Programming</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-card-progress" data-percent="95">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Python</h4>
+                            <p>Expert in ML libraries and data analysis</p>
+                            <div class="skill-tags">
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fab fa-cuttlefish"></i></div>
+                            <div class="skill-card-progress" data-percent="90">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>C</h4>
+                            <p>System programming and memory management</p>
+                            <div class="skill-tags">
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fab fa-java"></i></div>
+                            <div class="skill-card-progress" data-percent="80">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Java</h4>
+                            <p>Object-oriented programming and applications</p>
+                            <div class="skill-tags">
+                                <span>OOP</span>
+                                <span>GUI Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Science Skills Group -->
+                <div class="skills-group">
+                    <div class="skills-group-header">
+                        <span class="skill-group-icon"><i class="fas fa-brain"></i></span>
+                        <h3>Data Science</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-robot"></i></div>
+                            <div class="skill-card-progress" data-percent="90">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Machine Learning</h4>
+                            <p>Model development and predictive analytics</p>
+                            <div class="skill-tags">
+                                <span>Classification</span>
+                                <span>Regression</span>
+                                <span>Neural Networks</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="skill-card-progress" data-percent="85">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Data Analysis</h4>
+                            <p>Statistical analysis and visualization</p>
+                            <div class="skill-tags">
+                                <span>Pandas</span>
+                                <span>Data Cleaning</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="skill-card-progress" data-percent="80">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Power BI</h4>
+                            <p>Business intelligence and reporting</p>
+                            <div class="skill-tags">
+                                <span>Dashboards</span>
+                                <span>Data Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Creative Skills Group -->
+                <div class="skills-group">
+                    <div class="skills-group-header">
+                        <span class="skill-group-icon"><i class="fas fa-palette"></i></span>
+                        <h3>Creative</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-camera"></i></div>
+                            <div class="skill-card-progress" data-percent="90">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Photography</h4>
+                            <p>Composition and visual storytelling</p>
+                            <div class="skill-tags">
+                                <span>Portrait</span>
+                                <span>Landscape</span>
+                                <span>Street</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-image"></i></div>
+                            <div class="skill-card-progress" data-percent="85">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Photoshop</h4>
+                            <p>Photo editing and digital manipulation</p>
+                            <div class="skill-tags">
+                                <span>Retouching</span>
+                                <span>Compositing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills Group 
+                <div class="skills-group">
+                    <div class="skills-group-header">
+                        <span class="skill-group-icon"><i class="fas fa-puzzle-piece"></i></span>
+                        <h3>Other Skills</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="skill-card-progress" data-percent="95">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Problem Solving</h4>
+                            <p>Complex problem analysis and solution design</p>
+                            <div class="skill-tags">
+                                <span>Critical Thinking</span>
+                                <span>Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon"><i class="fas fa-comments"></i></div>
+                            <div class="skill-card-progress" data-percent="85">
+                                <svg class="progress-ring" width="60" height="60">
+                                    <circle class="progress-ring-circle-bg" cx="30" cy="30" r="25"></circle>
+                                    <circle class="progress-ring-circle" cx="30" cy="30" r="25"></circle>
+                                </svg>
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card-body">
+                            <h4>Communication</h4>
+                            <p>Technical communication and presentation</p>
+                            <div class="skill-tags">
+                                <span>Documentation</span>
+                                <span>Presentation</span>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Siliguri, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <p>sujoykumarsaha2004@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Phone</h3>
+                            <p>+91 9832000000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Internship</h3>
+                            <p>Available Right Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Sujoy Kumar Saha. All Rights Reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Sujoy2006" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sujoy-saha-7a33a7348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/su_joy26?igsh=MWVoYjN0MmhsaHY3bA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
